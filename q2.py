@@ -1,14 +1,6 @@
-marks = int(input("Enter marks: "))
+year = int(input("Enter a year: "))
 
-if marks < 25:
-    print("Grade: F")
-elif marks >= 25 and marks < 45:
-    print("Grade: E")
-elif marks >= 45 and marks < 50:
-    print("Grade: D")
-elif marks >= 50 and marks < 60:
-    print("Grade: C")
-elif marks >= 60 and marks < 80:
-    print("Grade: B")
+if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+    print(year, "is a leap year.")
 else:
-    print("Grade: A")
+    print(year, "is not a leap year.")
